@@ -77,8 +77,12 @@ var arrangesheep = function(p){
 
     mySheep.draw();
     p.fill(0);
-    p.text('You\'ve found '+ numArrangementsFound + ' of '+numArrangements+' arrangements',width/2,height-buffer/2);
-
+    if(numArrangementsFound<10){
+      p.text('You found '+ numArrangementsFound + ' of '+numArrangements+' arrangements',width/2,height-buffer/2);
+    }
+    else{
+      p.text('Hooray! You found all '+numArrangements+' arrangements!',width/2,height-buffer/2);
+    }
   }
   }
 
