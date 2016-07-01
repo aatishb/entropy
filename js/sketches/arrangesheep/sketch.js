@@ -165,60 +165,61 @@ var arrangesheep = function(p){
 
 
   p.mouseReleased = function(){
-  if(isScrolledIntoView('#arrangesheep')){
 
+    if(isScrolledIntoView('#arrangesheep')){
 
-    mySheep.numLeft = 0;
-    mySheep.numMiddle = 0;
-    mySheep.numRight = 0;
+      mySheep.numLeft = 0;
+      mySheep.numMiddle = 0;
+      mySheep.numRight = 0;
 
-    for(var i=0; i<3; i++){
-      var x = mySheep.positions[i][0] + imgsize/2;
-      if(x<width/3){mySheep.numLeft++;}
-      if(x>=width/3 && x<2*width/3){mySheep.numMiddle++;}
-      if(x>=2*width/3){mySheep.numRight++;}
-    }
-
-
-    // checks to see if we've already seen this arrangement
-    var flag = 0;
-    for(var i=0; i<arrangementsFound.length; i++){
-      var array = arrangementsFound[i];
-      if(array[0] == mySheep.numLeft && array[1] == mySheep.numMiddle && array[2] == mySheep.numRight){
-        flag = 1;
+      for(var i=0; i<3; i++){
+        var x = mySheep.positions[i][0] + imgsize/2;
+        if(x<width/3){mySheep.numLeft++;}
+        if(x>=width/3 && x<2*width/3){mySheep.numMiddle++;}
+        if(x>=2*width/3){mySheep.numRight++;}
       }
-    }
-
-    // if not, add it to our list
-    if(flag == 0){
-      arrangementsFound.push([mySheep.numLeft,mySheep.numMiddle,mySheep.numRight]);
-    }
 
 
-    // checks to see how many of all arrangements have we found
-    numArrangementsFound = 0;
-
-    for(var i=0; i<mySheep.arrangements.length; i++){
-      for(var j=0; j<arrangementsFound.length; j++){
-
-        var array1 = mySheep.arrangements[i];
-        var array2 = arrangementsFound[j];
-
-        if(array1[0]==array2[0] && array1[1]==array2[1] && array1[2]==array2[2]){
-          numArrangementsFound++;
+      // checks to see if we've already seen this arrangement
+      var flag = 0;
+      for(var i=0; i<arrangementsFound.length; i++){
+        var array = arrangementsFound[i];
+        if(array[0] == mySheep.numLeft && array[1] == mySheep.numMiddle && array[2] == mySheep.numRight){
+          flag = 1;
         }
       }
+
+      // if not, add it to our list
+      if(flag == 0){
+        arrangementsFound.push([mySheep.numLeft,mySheep.numMiddle,mySheep.numRight]);
+      }
+
+
+      // checks to see how many of all arrangements have we found
+      numArrangementsFound = 0;
+
+      for(var i=0; i<mySheep.arrangements.length; i++){
+        for(var j=0; j<arrangementsFound.length; j++){
+
+          var array1 = mySheep.arrangements[i];
+          var array2 = arrangementsFound[j];
+
+          if(array1[0]==array2[0] && array1[1]==array2[1] && array1[2]==array2[2]){
+            numArrangementsFound++;
+          }
+        }
+      }
+
+      // neaten sheep positions
+      mySheep.neaten();
+
+      // deselect sheep
+      selectedSheep = -1;
+
     }
-
-    // neaten sheep positions
-    mySheep.neaten();
-
-    // deselect sheep
-    selectedSheep = -1;
 
     return false;
 
-  }
   }
 
   p.windowResized = function() {

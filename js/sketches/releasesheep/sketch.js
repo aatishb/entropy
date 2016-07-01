@@ -76,6 +76,7 @@ var releasesheep = function(p){
         }
       }
     }
+    return false;
   }
 
 

@@ -263,65 +263,59 @@
 
 <p>Nobody knows why things began this way (although some folks have their guesses). But thank goodness for it, because everything interesting that has ever happened (and ever will happen) was a consequence of that unlikely beginning.</p>
 
-
-<p>The story of our universe is that of climbing Mt. Entropy, beginning in the fiery low-entropic depths of the Big Bang, and making its way to the summit, a cold and barren state of thermal equilibrium. Both the base and the peak of Mt. Entropy are utterly inhospitable to life. But somewhere along those rising slopes, the conditions were just right for complex and wondrous things to emerge, things like trees and jellyfish and heartache and cheesecakes and yes, even melting cubes of ice.</p>
-
-<figure>
-<img src="media/mountentropy.jpg" width="440px" alt="climbing mount entropy">
-</figure>
-
+<p>The story of our universe is that of climbing Mt. Entropy, beginning in the fiery low-entropy state of the Big Bang, and making its way to the summit, a cold and barren state of thermal equilibrium. Both the base and the peak of Mt. Entropy are utterly inhospitable to life. But somewhere along those rising slopes, the conditions were just right for complex and wondrous things to emerge, things like trees and jellyfish and heartache and cheesecakes and yes, even melting cubes of ice.</p>
 
 </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
-  <script type="text/javascript">
-   function isScrolledIntoView(elem)
-  {
-      var $elem = $(elem);
-      var $window = $(window);
+<script type="text/javascript">
+function isScrolledIntoView(elem)
+{
+  var $elem = $(elem);
+  var $window = $(window);
 
-      var docViewTop = $window.scrollTop();
-      var docViewBottom = docViewTop + $window.height();
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
 
-      var elemTop = $elem.offset().top;
-      var elemBottom = elemTop + $elem.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
 
-      return ((( elemTop >= docViewTop) && (elemTop <= docViewBottom)) || ((elemBottom >= docViewTop) && (elemBottom <= docViewBottom)) || (( elemTop <= docViewTop) && (elemBottom >= docViewBottom)));
-  }
-  </script>
+  return ((( elemTop >= docViewTop) && (elemTop <= docViewBottom)) || ((elemBottom >= docViewTop) && (elemBottom <= docViewBottom)) || (( elemTop <= docViewTop) && (elemBottom >= docViewBottom)));
+}
+</script>
 
-  <script type="text/javascript">javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.domElement.style.cssText='position:fixed;left:0;top:0;z-index:10000';document.body.appendChild(stats.domElement);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()
-  </script>
+<script type="text/javascript">javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.domElement.style.cssText='position:fixed;left:0;top:0;z-index:10000';document.body.appendChild(stats.domElement);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()
+</script>
 
-  <script type="text/javascript" src="js/sketches/bouncingsheep/sketch.js"></script>
-  <script type="text/javascript"> new p5(bouncingsheep, "bouncingsheep"); </script>
+<script type="text/javascript" src="js/sketches/bouncingsheep/sketch.js"></script>
+<script type="text/javascript"> new p5(bouncingsheep, "bouncingsheep"); </script>
 
-  <script type="text/javascript" src="js/sketches/arrangesheep/sketch.js"></script>
-  <script type="text/javascript"> new p5(arrangesheep, "arrangesheep"); </script>
+<script type="text/javascript" src="js/sketches/arrangesheep/sketch.js"></script>
+<script type="text/javascript"> new p5(arrangesheep, "arrangesheep"); </script>
 
-  <script type="text/javascript" src="js/sketches/addsheep/sketch.js"></script>
-  <script type="text/javascript"> new p5(addsheep, "addsheep"); </script>
+<script type="text/javascript" src="js/sketches/addsheep/sketch.js"></script>
+<script type="text/javascript"> new p5(addsheep, "addsheep"); </script>
 
-  <script type="text/javascript" src="js/sketches/releasesheep/sketch.js"></script>
-  <script type="text/javascript"> new p5(releasesheep, "releasesheep"); </script>
+<script type="text/javascript" src="js/sketches/releasesheep/sketch.js"></script>
+<script type="text/javascript"> new p5(releasesheep, "releasesheep"); </script>
 
-  <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
 
-  <script type="text/javascript" src="js/sketches/graphsheep/sketch.js"></script>
-  <script type="text/javascript"> makeGraph1(); </script>
+<script type="text/javascript" src="js/sketches/graphsheep/sketch.js"></script>
+<script type="text/javascript"> makeGraph1(); </script>
 
-  <script type="text/javascript" src="js/sketches/graphenergy/sketch.js"></script>
-  <script type="text/javascript"> makeGraph2(); </script>
+<script type="text/javascript" src="js/sketches/graphenergy/sketch.js"></script>
+<script type="text/javascript"> makeGraph2(); </script>
 
-  <script type="text/javascript" src="js/sketches/graphenergyinteractive/sketch.js"></script>
-  <script type="text/javascript"> makeGraph3(xarr,yarr); </script>
-  <script type="text/javascript" src="js/sketches/createsliders.js"></script>
+<script type="text/javascript" src="js/sketches/graphenergyinteractive/sketch.js"></script>
+<script type="text/javascript"> makeGraph3(xarr,yarr); </script>
+<script type="text/javascript" src="js/sketches/createsliders.js"></script>
 
-  <script type="text/javascript" src="js/libraries/forkingpaths.js"></script>
+<script type="text/javascript" src="js/libraries/forkingpaths.js"></script>
 
 
 </body>

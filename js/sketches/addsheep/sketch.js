@@ -119,9 +119,10 @@ var addsheep = function(p){
         combinations = p.round(factorial[numFields+mySheep.length-1]/(factorial[mySheep.length]*factorial[numFields-1]));
         numCombinations = p.convertToText(combinations);
 
-        return false;
       }
     }
+
+    return false;
   }
 
 
