@@ -120,9 +120,8 @@ var addsheep = function(p){
         numCombinations = p.convertToText(combinations);
 
       }
+      return false;
     }
-
-    return false;
   }
 
 

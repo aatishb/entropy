@@ -216,10 +216,9 @@ var arrangesheep = function(p){
       // deselect sheep
       selectedSheep = -1;
 
+      return false;
+
     }
-
-    return false;
-
   }
 
   p.windowResized = function() {

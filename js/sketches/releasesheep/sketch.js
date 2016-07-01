@@ -75,8 +75,8 @@ var releasesheep = function(p){
           simulationSpeed = 60;
         }
       }
+      return false;
     }
-    return false;
   }
 
 
