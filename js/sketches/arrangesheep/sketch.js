@@ -48,7 +48,7 @@ var arrangesheep = function(p){
 
   if(isScrolledIntoView('#arrangesheep')){
 
-    if(p.mouseIsPressed){
+    if(p.mouseIsPressed || p.touchIsDown){
       // if mouse is pressed..
       // ..if no sheep is selected, look to see if mouse cursors is over one
       if(selectedSheep == -1){
