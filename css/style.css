@@ -20,6 +20,11 @@ body {
   margin-bottom:0px;
 }
 
+#bouncingsheep2 {
+  max-width:700px;
+  margin-bottom:0px;
+}
+
 #releasesheep {
   max-width:800px;
 }
@@ -37,7 +42,7 @@ figure {
     font-size: 80%;
     display: table;
     max-width: 100%;
-    margin: 1px auto; /* not needed unless you want centered */
+    margin: 1px auto;
     margin-bottom:20px;
 }
 
@@ -94,7 +99,12 @@ h1, h2, h3 {
   margin-bottom:20px;
 }
 
-#title h1 {
+#title h1{
+  margin-bottom:10px;
+}
+
+
+#title h3{
   margin-bottom:10px;
 }
 
@@ -128,6 +138,24 @@ blockquote {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
+
+.social_outer {
+  text-align: center;
+}
+
+.social_inner {
+  display: inline-block;
+}
+
+.footer {
+  padding: 10px;
+  background: #262626;
+  color:#ddd;
+}
+
+.footer h2{
+  margin-top:10px;
+}
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {

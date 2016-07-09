@@ -1,4 +1,4 @@
-var bouncingsheep = function(p){
+var bouncingsheep2 = function(p){
 
   var img;  // Declare variable 'img'.
   var imgsize;
@@ -24,7 +24,7 @@ var bouncingsheep = function(p){
 
    p.draw = function() {
 
-    if(isScrolledIntoView('#bouncingsheep'))
+    if(isScrolledIntoView('#bouncingsheep2'))
     {
 
       //p.background(255,255,153);
@@ -88,9 +88,9 @@ var bouncingsheep = function(p){
   }
 
   p.onResize = function(){
-    //if(isScrolledIntoView('#bouncingsheep'))
+    //if(isScrolledIntoView('#bouncingsheep2'))
     //{
-    var divWidth = $('#bouncingsheep').width() ? $('#bouncingsheep').width() : p.windowWidth;
+    var divWidth = $('#bouncingsheep2').width() ? $('#bouncingsheep2').width() : p.windowWidth;
     width = divWidth;
     height = aspectratio*width;
     p.resizeCanvas(width, height);
