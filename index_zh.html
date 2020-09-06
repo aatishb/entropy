@@ -122,66 +122,66 @@
 
 <p>回到现实中的固体，假如我们增加能量或原子的数目，总共的组合数会爆炸性增长。举个例子，一个固体有30个原子和30份能量（如同30只羊跑在30块地上），总共有5.9亿亿种组合方式。想想看，这才30个原子，日常我们接触到的固体大约有10^24（1亿亿亿） (a million billion billion) ，其中的能量份数也有差不多相同的量级，这使得组合数量达到了难以想象的地步。</p>
 
-<h2>熵就是组合数</h2>
+<h2>熵就是组合数目</h2>
 
 <p>看到这里，读者们可能会感到疑惑，这两者之间有什么关系呢？实际上，熵就是“潜在的组合数”的时兴说法。熵是保持一件事物外在状态（宏观）不变的前提下，可以对其内在（微观）进行重新排列的计数（实际上是这些计数的对数，但这只是数学上的简化，并不影响我们的讨论）。</p>
 
-<p>举个例子，对于一个气球，我们可以测量出里面气体的一些确切属性——压强、体积和温度等，也就是表达它宏观状态的数据So, for example, if you gave me a balloon, I could measure certain things about the gas inside it – its pressure, volume, temperature, and so on. These numbers record the macroscopic state of the gas. Given this handful of numbers, there are umpteen ways in which the gas molecules might be arranged inside the balloon. They could have different positions, and whiz about in different directions, with different speeds. So there’s a massive number of internal, microscopic arrangements (in this case, the positions and velocities of the gas molecules) that all result in the same external state (pressure, volume, and temperature of the gas). Entropy is a count of all these arrangements.</p>
+<p>举个例子，对于一个气球，我们可以测量出里面气体的一些确切属性——压强、体积和温度等，也就是表达它宏观状态的数据。基于这些数据，内部气体分子的组合方式可以有无数种——不同的方向、不同的速度，大量的内部微观组合可以表现出相同的外部状态（压强、体积和温度）。熵就是这些组合方式的计数。</p>
 
 <figure>
 <img src="media/insideaballoon.jpg" width="400px" alt="molecules inside a balloon">
-<figcaption>The entropy of the air inside a balloon counts all the ways that the air molecules can be arranged while maintaining the same overall temperature, pressure, and volume.</figcaption>
+<figcaption>一个气球中气体的熵，就是所有气体分子在保持相同温度、压强和体积的情况下的组合数目。</figcaption>
 </figure>
 
-<p>Going back to our solid, we saw that as we made it bigger, by adding more atoms, or hotter, by adding more packets of energy, the number of possible energy arrangements blew up. In other words, the entropy increased.</p>
+<p>回到固体的讨论上，前文提到当我们增加固体中的原子数目，或者增加总的能量数，整体的能量子的排列组合数目爆炸性地增长，换句话说，熵增加了。</p>
 
-<p>Notice in the case of the balloon, we were talking about arrangements of gas molecules, while in the case of the solid, we’re talking about arrangements of energy packets (and in the farm, we’re arranging sheep). Entropy is all about arrangements of things, but the actual things being arranged can be different in each case.</p>
+<p>请注意，当我们讨论气球的熵时，我们指的是气球中气体分子的组合方式，而当我们讨论固体时，指的又是能量子（而在农场里，指的是羊的组合方式）。熵确实指的是事物的组合数目，但不同场景下指代对象不同。</p>
 
-<h2>Putting The Pieces Together</h2>
+<h2>理一理头绪</h2>
 
-<p>We can now begin to answer the question we set out with. Why does entropy increase?</p>
+<p>现在可以开始回答我们前文的问题了，为什么熵会增加？</p>
 
-<p>To see why, we’re going to need two solids and stick them together. Let’s say each solid has 3 atoms. We’ll start one of them hot, with 6 packets of energy, and the other cold, with no energy. The solids can exchange energy freely between themselves.</p>
+<p>在解释之前，我们先将两个固体粘在一起，每个固体有3个原子，两个固体一冷一热，热的固体有6份能量，而冷的没有。固体之间可以自由的交换能量。</p>
 
 <figure>
 <img src="media/einsteinsolid.gif" alt="Two Einstein Solids Exchanging Energy">
 </figure>
 
-<p>In sheep land, we’ve removed the fence between two neighboring farms, each with 3 plots of land, and 6 sheep are roaming freely between them.</p>
+<p>对应到羊圈里，我们移除掉相邻两个羊圈的栅栏，这样总共6只羊可以自由的在2个农场共6块地游荡。</p>
 
-<p>What will happen? Click on the farm below to see for yourself.</p>
+<p>会发生什么事情？点击下方的农场，就能看到。</p>
 </div>
 
 <div id="releasesheep" class="interactive"></div>
 
 <div class="container">
 
-<p>On the left hand side of the sheep simulation above, you can watch the sheep shuffling between the farms at random. There doesn’t seem to be any pattern to their motion.</p>
+<p>左边是上文提到的场景的模拟，我们可以直观的看到羊在地里随机的游荡。暂时看不出有什么规律。</p>
 
-<p>On the right hand side, you'll find a graph (a histogram) that keeps track of every 'sheep state' you encounter. (The state here refers to how many sheep are in the top farm, and how many on the bottom.) And if you watch it go for a while, you'll notice something interesting.</p>
+<p>右边是一个直方图，它记录了每个出现的“羊群状态”次数（纵坐标表示上方的农场中羊群的数目，横坐标表示出现的次数）。如果盯着图看一会（也可以点击Fast或者Blazing按钮加快速度），你会发现一些有趣的事情。</p>
 
-<p>It turns out, you're most likely to find the sheep more or less evenly split between the two farms (the states labelled 2, 3, or 4 on the graph). Meanwhile, states where the sheep are all in one farm (labelled 0 or 6 on the graph) aren't as likely. (If you don't see this as yet, press one of the blue buttons to speed up the simulation.)</p>
+<p>不难发现，两个羊圈中羊的数量相同或接近相同出现的次数最多（直方图中的2，3，4状态）。同时羊只在一边的状态最少见（直方图中0，6状态）。如果还没发现这个规律，多等一会或者给动图加速 :) 。</p>
 
-<p>So although the sheep are shuffled at random, over time, a pattern emerges. <i>Some states are more likely than others.</i></p>
+<p>所以尽管羊群足够随机的游荡，但经过足够的事件后，还是发现了一些规律，<b>有些状态就是比其他状态更受欢迎</b>。</p>
 
-<h2>Why Sheep Spread Out</h2>
+<h2>为什么羊群会散开到两个农场，而不聚在一起？</h2>
 
-<p>To see why, let’s count arrangements. Here are all the ways to arrange the sheep between the two farms.</p>
+<p>解释之前，我们先统计一下各个组合的数目。下图每个状态的出现次数，鼠标移动到柱形上可以看到更多细节。</p>
 </div>
 
 <div id="graphsheep" class="interactive"></div>
 
 <div class="container">
 
-<p>If you add those blue bars up, you'll find they add up to 462. So there are 462 ways to arrange the 6 sheep in this situation.</p>
+<p>如果对纵坐标进行求和，就能得到462，意味着6只羊在这个场景下的分布有462中情况。</p>
 
-<p>Now, let’s assume the sheep are equally likely to be in any of these 462 arrangements. (Since they move randomly, there's no reason to prefer one arrangement over another.) In that case, we're most likely to find the sheep evenly distributed between the two farms, because this state has the most arrangements (it's the biggest bar in the graph).</p>
+<p>然后假设这些462种分羊场景各自出现的几率相同（因为我们假定了羊的移动是足够随机的，因此不会出现某种场景的几率大于另外的）。此时，两个羊圈均分羊群的场景是最容易出现的，因为在图中有着最高的纵坐标。</p>
 
-<p>In physics-speak, the sheep are most likely to be in the highest entropy state.</p>
+<p>用物理学的角度说，羊群最容易分布成熵最高的状态。</p>
 
-<p>Meanwhile, there are only 28 possible arrangements for the state we started off in, with all 6 sheep on the top farm (the bar to the right of the graph). So we're less likely to find the sheep in this lower entropy state.</p>
+<p>同时，我们的初始状态——6只羊都在上边农场，只有28种组合（直方图的最右侧）。（同时6只羊都在下方也只有28种）所以低熵状态更不常见。</p>
 
-<p>It’s important to keep in mind that there’s no special guiding force driving these sheep to spread out and increase entropy. It’s just that there are fewer ways to keep the sheep concentrated, and more ways to spread them out.</p>
+<p>需要留意的是，并没有什么特殊的力量让羊群分散冰增加系统的熵，只是羊群集中出现的场景少，而分散的多。</p>
 
 <figure>
 <img src="media/lowvshighentropy.png" width="700px" alt="Comparing a low and high entropy state">
