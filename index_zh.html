@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Entropy Explained</title>
+  <meta charset="UTF-16">
+  <meta name="description" content="An explorable blog post about entropy, with sheep." />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+</head>
+<body>
+
+<div id="bouncingsheep" class="interactive"></div>
+
+<div class="container">
+
+  <div id="title">
+    <h1>Entropy Explained, With Sheep</h1>
+    <h3>From Melting Ice Cubes to a Mystery About Time</h3>
+    <h3>By <a href="https://twitter.com/aatishb">Aatish Bhatia</a></h3>
+  </div>
+
+
+<p>Let’s start with a puzzle.</p>
+
+<p>Why does this gif look totally normal...</p>
+
+
+<figure>
+<a href="https://commons.wikimedia.org/wiki/File:Melting_icecubes.gif"><img src="media/meltingice.gif" alt="Ice melting in a glass"></a>
+<figcaption> Image: Moussa / Public Domain</figcaption>
+</figure>
+
+<p>...but this one look strange?</p>
+
+<figure>
+<img src="media/meltingice_reverse.gif" alt="Ice melting in a glass, played in reverse">
+</figure>
+
+<p>The second gif is just the first one played in reverse. But something about it immediately seems <i>off</i>. This just never happens. Ice melts on a warm day, but a glass of water left out will never morph into neatly-stacked cubes of ice.</p>
+
+<p>But here’s the weird thing. Imagine you could zoom in and see the atoms and molecules in a melting cube of ice. If you could film the motion of any particle, and then play that film back in reverse, what you’d see would still be perfectly consistent with the laws of physics. It wouldn’t look unusual at all. The movements of the atoms and molecules in the first gif are every bit as ‘legal’ (in the court of physical law) as those in the second gif. So why is the first gif an everyday occurrence, while the reverse one impossible?</p>
+
+<p>This isn’t just about ice cubes. Imagine you dropped an egg on the floor. Every atomic motion taking place in this messy event could have happened in reverse. The pieces of the egg could theoretically start on the floor, hurtle towards each other, reforming into an egg as it lifts off the ground, travel up through the air, and arrive gently in your hand. The movement of every atom in this time-reversed egg would still be perfectly consistent with the laws of physics. And yet, this never happens.</p>
+
+<h2>The Origin of Irreversibility</h2>
+
+<p>So there’s a deep mystery lurking behind our seemingly simple ice-melting puzzle. At the level of microscopic particles, nature doesn’t have a preference for doing things in one direction versus doing them in reverse. The atomic world is a two-way street.</p>
+
+<p>And yet, for some reason, when we get to large collections of atoms, a one-way street emerges for the direction in which events take place, even though this wasn’t present at the microscopic level. An arrow of time emerges.</p>
+
+</div>
+<figure>
+<img src="media/onewaytotwoway.gif" width="700px" alt="An arrow of time emerges.">
+
+<figcaption>
+ The atomic world is a two-way street. But when we get to large collections of atoms, a one-way street emerges for the direction in which events take place.</figcaption>
+</figure>
+
+<div class="container">
+<p>Why is this?</p>
+
+<p>You might’ve heard an explanation that goes like this: whenever you drop an egg, or melt an ice cube, or shatter a wine glass, you’ve increased the <i>entropy</i> of the world. You might also have heard the phrase, “<i>entropy always increases</i>”. In other words, things are only allowed to happen in one direction &mdash; the direction in which entropy increases.
+
+<p>But this doesn’t answer the question, it just replaces it with a new set of questions.</p>
+
+<p>What is entropy, <i>really?</i> Why does it always keep increasing? Why don’t eggshells uncrack, or wine glasses unshatter? In this piece, my goal is to give you the tools to answer these questions.</p>
+
+<p>Going down this road leads us to some of the biggest unanswered questions about the cosmos: how did our universe begin, how will it end, and why is our past different from our future?</p>
+
+<h2>Counting Sheep</h2>
+
+<p>So let’s get started. First, I’d like you to picture some sheep.</p>
+
+<figure>
+<img src="media/sadsheep.jpg" width="700px" alt="Confuddled sheep.">
+</figure>
+
+<p>Say we’ve got three sheep. These sheep are shuffling about in a farm, pretty much at random. And this farm is split into three plots of lands.</p>
+
+<p>There are 10 different ways that these 3 sheep can be arranged in 3 plots of land. Try to find them all, by dragging the sheep around below.</p>
+</div>
+
+<div id="arrangesheep" class="interactive"></div>
+
+<div class="container">
+
+<p><span class="choice" data-choicename="arrangements">Did you find all 10 arrangements? If you missed any, <a href="#" class="choice-item">click here</a> to see them all.</span></p>
+
+<div class="choice-result" data-choicename="arrangements">
+<span class="choice-result-item"><p>Ok, here are all 10 arrangments:</p>
+<figure>
+<img src="media/10arrangements.gif" alt="10 Ways To Arrange 3 Balls in 3 Boxes">
+</figure>
+</span>
+</div>
+
+<p>So why are we picturing this pastoral scene? Because we can use it to understand the physics of solids.</p>
+
+<p>When you heat a solid, you're adding energy to it. We usually think of energy as something continuous, something that flows. But when you get down to the atomic level, quantum mechanics teaches us that energy comes in discrete chunks.</p>
+
+<p>In the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/hosc.html#c1">quantum picture</a>, you can think of every atom <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/therm/einsol.html">like a tiny bucket</a> for energy, into which we can place any number of energy packets.</p>
+
+<figure>
+<img src="media/energyanalogy.png" alt="analogy between energy and sheep">
+</figure>
+
+<p>Just as the sheep wander about the plots of land in the farm, these packets of energy randomly shuffle among the atoms in the solid. So our imaginary farm is really a model of a solid, with energy (sheep) shuffled between atoms (plots of land).</p>
+
+<p>Back to the farm. We saw that there were 10 ways to arrange 3 sheep among 3 plots of land. But what if, instead, there were more sheep wandering more plots of land? How many arrangements would there be? Find out by pressing the blue buttons below.</p>
+
+</div>
+
+<div id="addsheep" class="interactive"></div>
+
+<div class="container">
+<p>That escalated quickly.</p>
+
+<p>You can see that, as you add more sheep or plots of land, the number of possible sheep arrangements grows exponentially.</p>
+
+<p>Translating back to the solid, if we increase the number of packets of energy, or the number of atoms, the number of possible energy arrangements blows up. For a solid with 30 packets of energy distributed among 30 atoms (think 30 sheep on 30 plots of land), there are 59 million billion different ways to arrange the energy. And that’s only 30 atoms. The solids you encounter everyday have something like 10^24 (a million billion billion) atoms in them, and a similar number of energy packets. The number of ways to arrange the energy now becomes mind-bogglingly large.</p>
+
+<h2>Entropy Is All About Arrangements</h2>
+
+<p>At this point, you might be wondering what this has to do with entropy. Well, entropy is just a fancy word for ‘number of possible arrangements’. Entropy is a count of how many ways you can rearrange the ‘insides’ of a thing (its microscopic internals), while keeping its ‘outwardly’ (macroscopic) state unchanged. (Technically it’s the log of the number of these arrangements, but that’s just a mathematical convenience and doesn’t affect our discussion.)</p>
+
+<p>So, for example, if you gave me a balloon, I could measure certain things about the gas inside it – its pressure, volume, temperature, and so on. These numbers record the macroscopic state of the gas. Given this handful of numbers, there are umpteen ways in which the gas molecules might be arranged inside the balloon. They could have different positions, and whiz about in different directions, with different speeds. So there’s a massive number of internal, microscopic arrangements (in this case, the positions and velocities of the gas molecules) that all result in the same external state (pressure, volume, and temperature of the gas). Entropy is a count of all these arrangements.</p>
+
+<figure>
+<img src="media/insideaballoon.jpg" width="400px" alt="molecules inside a balloon">
+<figcaption>The entropy of the air inside a balloon counts all the ways that the air molecules can be arranged while maintaining the same overall temperature, pressure, and volume.</figcaption>
+</figure>
+
+<p>Going back to our solid, we saw that as we made it bigger, by adding more atoms, or hotter, by adding more packets of energy, the number of possible energy arrangements blew up. In other words, the entropy increased.</p>
+
+<p>Notice in the case of the balloon, we were talking about arrangements of gas molecules, while in the case of the solid, we’re talking about arrangements of energy packets (and in the farm, we’re arranging sheep). Entropy is all about arrangements of things, but the actual things being arranged can be different in each case.</p>
+
+<h2>Putting The Pieces Together</h2>
+
+<p>We can now begin to answer the question we set out with. Why does entropy increase?</p>
+
+<p>To see why, we’re going to need two solids and stick them together. Let’s say each solid has 3 atoms. We’ll start one of them hot, with 6 packets of energy, and the other cold, with no energy. The solids can exchange energy freely between themselves.</p>
+
+<figure>
+<img src="media/einsteinsolid.gif" alt="Two Einstein Solids Exchanging Energy">
+</figure>
+
+<p>In sheep land, we’ve removed the fence between two neighboring farms, each with 3 plots of land, and 6 sheep are roaming freely between them.</p>
+
+<p>What will happen? Click on the farm below to see for yourself.</p>
+</div>
+
+<div id="releasesheep" class="interactive"></div>
+
+<div class="container">
+
+<p>On the left hand side of the sheep simulation above, you can watch the sheep shuffling between the farms at random. There doesn’t seem to be any pattern to their motion.</p>
+
+<p>On the right hand side, you'll find a graph (a histogram) that keeps track of every 'sheep state' you encounter. (The state here refers to how many sheep are in the top farm, and how many on the bottom.) And if you watch it go for a while, you'll notice something interesting.</p>
+
+<p>It turns out, you're most likely to find the sheep more or less evenly split between the two farms (the states labelled 2, 3, or 4 on the graph). Meanwhile, states where the sheep are all in one farm (labelled 0 or 6 on the graph) aren't as likely. (If you don't see this as yet, press one of the blue buttons to speed up the simulation.)</p>
+
+<p>So although the sheep are shuffled at random, over time, a pattern emerges. <i>Some states are more likely than others.</i></p>
+
+<h2>Why Sheep Spread Out</h2>
+
+<p>To see why, let’s count arrangements. Here are all the ways to arrange the sheep between the two farms.</p>
+</div>
+
+<div id="graphsheep" class="interactive"></div>
+
+<div class="container">
+
+<p>If you add those blue bars up, you'll find they add up to 462. So there are 462 ways to arrange the 6 sheep in this situation.</p>
+
+<p>Now, let’s assume the sheep are equally likely to be in any of these 462 arrangements. (Since they move randomly, there's no reason to prefer one arrangement over another.) In that case, we're most likely to find the sheep evenly distributed between the two farms, because this state has the most arrangements (it's the biggest bar in the graph).</p>
+
+<p>In physics-speak, the sheep are most likely to be in the highest entropy state.</p>
+
+<p>Meanwhile, there are only 28 possible arrangements for the state we started off in, with all 6 sheep on the top farm (the bar to the right of the graph). So we're less likely to find the sheep in this lower entropy state.</p>
+
+<p>It’s important to keep in mind that there’s no special guiding force driving these sheep to spread out and increase entropy. It’s just that there are fewer ways to keep the sheep concentrated, and more ways to spread them out.</p>
+
+<figure>
+<img src="media/lowvshighentropy.png" width="700px" alt="Comparing a low and high entropy state">
+<figcaption>There are fewer arrangements where the sheep (energy) are concentrated, and more arrangements where the sheep (energy) are spread out. </figcaption>
+</figure>
+
+<p>Let's translate this back to the physics world. We started off with energy unequally distributed between two solids. Then we put the solids together, and let them exchange energy freely. Over time, we discovered the most likely outcome was for both solids to share the energy evenly. The hot object cooled down, and the cool object warmed up. As this happened, their entropy increased.</p>
+
+<p>Just like for the sheep, there’s no new law of physics that ‘tells’ the energy to spread out, or the entropy to go up. There are simply more ways to spread energy out than to keep it contained, so that's what we should expect to see happen. Higher entropy states are more probable than lower entropy ones.</p>
+
+<p>We’re beginning to see how that ‘one-way street’ emerges.</p>
+
+<p>But, in this tiny system, odd things can happen. Here’s that graph again, showing all the different states.</p>
+
+</div>
+
+<div id="graphenergy" class="interactive"></div>
+
+<div class="container">
+
+<p>There’s something curious here. Although the equal energy state is the most likely, it’s still very possible to find all the energy in one solid (the left or right extremes of the graph). In fact, there's about a 1 in 8 chance of this happening. So the entropy in this system can fluctuate, sometimes going up, other times going down.</p>
+
+<p>So when we look at really tiny solids, energy doesn’t always flow from a hot object to a cold one. It can go the other way sometimes. And entropy doesn’t always increase. This isn't just a theoretical issue, entropy decreases have actually been <a href ="http://www.nature.com/news/1998/020722/full/news020722-2.html">seen in microscopic experiments</a>.</p>
+
+<h2>Why Big Is Different</h2>
+
+<p>So what’s different about big things? To find out, turn up the number of energy packets, and then the number of atoms, and watch what happens to our arrangements graph.</p>
+
+</div>
+
+<div class="interactive">
+	<div style = "width: 50%; min-width: 360px; margin: 0 auto;">
+		<label for="amount1">Energy Packets:</label>
+		<input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-size:1em;">
+		<div id="slider1""></div>
+		<label for="amount2"> Atoms:</label>
+		<input type="text" id="amount2" readonly style="border:0; color:#f6931f; font-size:1em;">
+		<div id="slider2"></div>
+		The odds of finding the system in the least likely state are about 1 in <input type="text" id="amount3" readonly style="border:0; color:#f6931f; font-size:1em;">
+	</div>
+	<div id="graphenergyinteractive"></div>
+</div>
+
+<div class="container">
+
+<p>You should see that as you make things bigger, the graph of arrangements becomes more sharply peaked, centered around the most likely (i.e. the highest entropy) state.</p>
+
+<p>The left and right ends of the graph represent states where the energy is mostly contained in one solid, and these become very unlikely. Meanwhile, the middle of the graph represents states where the energy is evenly distributed between both solids, and these become increasingly likely.</p>
+
+<p>Remember that when we stuck two tiny solids together (with 3 atoms each and 6 packets of energy), there was about a 1 in 8 chance of finding all the energy concentrated in one solid. Those aren't terrible odds... you probably wouldn't bet a lot of money against this outcome.</p>
+
+<p>But, when we scale up these solids to having 50 atoms each, and sharing 50 units of energy, the odds of finding all the energy in one solid is about 1 in <i>133 billion</i>. Now that's starting to look like a much safer bet!</p>
+
+<figure>
+<img src="media/entropygraphs.jpg" width="700px" alt="graphs of entropy as number of particles increase">
+<figcaption>As you add more pieces to your system, its entropy graph becomes steeper and steeper. So you're increasingly likely to find it at a state near the peak.</figcaption>
+</figure>
+
+<p>And that’s just 50 atoms. When we get to an object as big as an ice cube in a glass of water, with something like 10^25 molecules, this entropy graph becomes incredibly sharply peaked, and you're guaranteed to be right near the peak. The odds of seeing entropy decrease are effectively zero, not because any physical law compels it to be so, but because of sheer statistics &mdash; there are overwhelmingly more ways for the energy to be spread out than there are ways for the energy to be contained.</p>
+
+<p>We’ve just discovered why “entropy always increases”, a statement known to science as the Second Law of Thermodynamics.</p>
+
+<h2>The Solution to Our Mystery</h2>
+
+<p>We’ve covered a lot of ground here, so it’s worth pausing to recap. We started by asking why so many things in our lives happen in one direction, but never in reverse. Ice melts, but a glass of water on a warm day never turns into a block of ice. Eggs crack, but never uncrack; wine-glasses shatter, but never unshatter.</p>
+
+<p>The mystery is, at the level of atoms and molecules, each of these processes are reversible. But when we get to bigger collections of atoms, a kind of one-way street emerges &mdash; a macroscopic irreversibility arises from microscopically reversible parts. Things spontaneously happen in the direction of increasing entropy, never in the opposite direction.</p>
+
+<p>Now we know why. There’s no microscopic law telling any particle which direction to go, just like there’s no shepherd telling the sheep where to go in our imaginary farm. It’s just that there are more ways to spread energy around, and fewer ways to keep energy confined. Increasing entropy is highly likely, decreasing it is basically impossible. It’s just stuff obeying the laws of chance.</p>
+
+<h2>Entropy and Our Lives</h2>
+
+<p>The workings of our entire planet, including all the processes of life, ride on a wave of increasing entropy.</p>
+
+<p>All life on Earth relies on the energy we get from the sun. Sunlight is made up of concentrated, low-entropy parcels of energy. Our planet chews up this useful energy, uses it for its inner workings, and spits out the remainder as heat &mdash; a more spread out (and therefore higher-entropy) form of energy.</p>
+
+<p>The well from which we draw this low-entropy energy is the Sun. Like all stars, our Sun radiates away its concentrated energy, increasing its entropy, and slowly coming into equilibrium with the cold vacuum of space. One day our well will run out, as the Sun will run cold.</p>
+
+<h2>Where Are We Going?</h2>
+
+<p>Maybe you see where this is going. Extrapolating to the distant future, all stars will extinguish, all galaxies will radiate away their warmth, and our universe will reach a state of thermal equilibrium, no part of it any warmer or colder than any other part. Our universe will have hit peak entropy.</p>
+
+<p>And equilibrium is a boring place. There can be no life, no machines, and no meaningful change in equilibrium. This doomsday scenario is called the heat death of the universe, and it’s how cosmologists currently expect our universe to end. But don’t lose sleep over it, it won’t happen for another googol (that’s 10^100) years, and we’ll all be dead long before (I really did start this sentence trying to help).</p>
+
+<h2>How Did We Get Here?</h2>
+
+<p>There’s one last mystery lurking. We learned that the entropy of our universe keeps rising, and this is because higher entropy states are more probable than lower entropy ones. Based on this, we can extrapolate that our universe must have started off in a very improbable state of very low entropy.</p>
+
+<p>Nobody really knows why things began this way (although some folks have their guesses). But thank goodness for it, because everything interesting that has ever happened (and ever will happen) was a consequence of this unlikely beginning.</p>
+
+<p>The story of our universe is that of climbing Mt. Entropy, beginning in the fiery low-entropic depths of the Big Bang, and making its way to the summit, a cold and barren state of thermal equilibrium. Both the base and the peak of Mt. Entropy are utterly inhospitable to life. But somewhere along those rising slopes, the conditions were just right for complex and wondrous things to emerge, things like trees and jellyfish and heartache and cheesecakes and yes, even melting cubes of ice.</p>
+
+</div>
+
+<div id="bouncingsheep2" class="interactive"></div>
+
+<div class="footer">
+<div class="container">
+
+	<div class="social_outer">
+	<div class="social_inner">
+		<img src="media/social/share.png" height="60">
+		<a href="http://www.facebook.com/sharer.php?u=https://aatishb.github.io/entropy"><img src="media/social/Facebook.png" width="60" height="60"></a>
+    	<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Faatishb.github.io%2Fentropy&amp;text=Entropy%20Explained,%20With%20Sheep&amp;via=aatishb" target="_blank"><img src="media/social/Twitter.png" width="60" height="60"></a>
+    	<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','https://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="media/social/Pinterest.png" width="60" height="60"></a>
+		<a href="https://plus.google.com/share?url=https://aatishb.github.io/entropy" target="_blank"><img src="media/social/Google+.png" width="60" height="60"></a>
+    	<a href="http://reddit.com/submit?url=https://aatishb.github.io/entropy&amp;title=Entropy Explained, With Sheep" target="_blank"><img src="media/social/Reddit.png" width="60" height="60"></a>
+		<a href="https://github.com/aatishb/entropy/"><img src="media/social/Github.png" width="60" height="60"></a>
+	</div>
+	</div>
+
+	<h2>Thanks for checking out this post!</h2>
+
+	<p>If you enjoyed this essay and want to see more of this kind of work in future, please consider <b><a href="https://www.patreon.com/aatishb">supporting me on Patreon</a></b>. Your support makes this work possible.</p>
+
+	<p>If you have any feedback, <a href="https://twitter.com/aatishb">drop me a line</a>. I'd love to hear what you think.</p>
+
+	<h2>Learn More</h2>
+
+	<p>The model of a solid described in this post was <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/therm/einsol.html">first proposed</a> by none other than Albert Einstein <a href="https://en.wikipedia.org/wiki/Einstein_solid">in 1907</a>.</p>
+
+	<p>If you're interested in learning about entropy at a more mathematical level, I recommend the excellent textbook <a href="https://www.amazon.com/Introduction-Thermal-Physics-Daniel-Schroeder/dp/0201380277">Thermal Physics</a> by Daniel Schroeder. This post is my take on the ideas in Chapter 2 of his book (and also summarized in <a href="http://arxiv.org/pdf/1502.07051.pdf">this paper</a>).</p>
+
+	<p>It's a short step to go from understanding entropy to understanding temperature at a more fundamental level. I explored that link in my 2013 post, <a href="http://www.empiricalzeal.com/2013/01/05/what-the-dalai-lama-can-teach-us-about-temperatures-below-absolute-zero/">What the Dalai Lama can teach us about temperatures below absolute zero</a>.
+
+	<p>If you want to learn more about the arrow of time, pick up Sean Carroll's 2010 book <a href="https://www.preposterousuniverse.com/eternitytohere/">From Eternity To Here</a>, or watch one of his <a href="https://www.youtube.com/results?search_query=sean+carroll+time">many excellent talks</a> on the subject. His latest book is <a href="https://www.preposterousuniverse.com/bigpicture/">The Big Picture</a>.</p>
+
+	<p>Huge thanks to Yusra Naqvi, Upasana Roy, Jonathan Zong and Nicky Case for their helpful feedback.</p>
+
+	<h2>Remix</h2>
+
+	<p>This post is released in the public domain, under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero</a> license. That means you can distribute, remix and adapt it however you like, without asking for permission. (Although if you do something cool with it, I'd love to hear from you.) Attribution isn't legally required, but it's always appreciated.</p>
+
+	<p>Spot a typo? You can fix it <a href="https://github.com/aatishb/entropy/edit/master/index.html">here</a>.</p>
+
+	<p>Here's the <a href="https://github.com/aatishb/entropy/">source code</a>, if you're into that. The interactives were built using <a href="https://p5js.org/">p5.js</a> and <a href="https://plot.ly/javascript/">plotly.js</a></p>
+
+
+</div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+  <script type="text/javascript">
+   function isScrolledIntoView(elem)
+  {
+      var $elem = $(elem);
+      var $window = $(window);
+
+      var docViewTop = $window.scrollTop();
+      var docViewBottom = docViewTop + $window.height();
+
+      var elemTop = $elem.offset().top;
+      var elemBottom = elemTop + $elem.height();
+
+      return ((( elemTop >= docViewTop) && (elemTop <= docViewBottom)) || ((elemBottom >= docViewTop) && (elemBottom <= docViewBottom)) || (( elemTop <= docViewTop) && (elemBottom >= docViewBottom)));
+  }
+  </script>
+
+  <!-- This is used to measure page speed. Not needed any more. -->
+  <!-- <script type="text/javascript">javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.domElement.style.cssText='position:fixed;left:0;top:0;z-index:10000';document.body.appendChild(stats.domElement);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()
+  </script> -->
+
+  <script type="text/javascript" src="js/sketches/bouncingsheep/sketch.js"></script>
+  <script type="text/javascript"> new p5(bouncingsheep, "bouncingsheep"); </script>
+
+  <script type="text/javascript" src="js/sketches/bouncingsheep/sketch2.js"></script>
+  <script type="text/javascript"> new p5(bouncingsheep2, "bouncingsheep2"); </script>
+
+  <script type="text/javascript" src="js/sketches/arrangesheep/sketch.js"></script>
+  <script type="text/javascript"> new p5(arrangesheep, "arrangesheep"); </script>
+
+  <script type="text/javascript" src="js/sketches/addsheep/sketch.js"></script>
+  <script type="text/javascript"> new p5(addsheep, "addsheep"); </script>
+
+  <script type="text/javascript" src="js/sketches/releasesheep/sketch.js"></script>
+  <script type="text/javascript"> new p5(releasesheep, "releasesheep"); </script>
+
+  <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+
+  <script type="text/javascript" src="js/sketches/graphsheep/sketch.js"></script>
+  <script type="text/javascript"> makeGraph1(); </script>
+
+  <script type="text/javascript" src="js/sketches/graphenergy/sketch.js"></script>
+  <script type="text/javascript"> makeGraph2(); </script>
+
+  <script type="text/javascript" src="js/sketches/graphenergyinteractive/sketch.js"></script>
+  <script type="text/javascript"> makeGraph3(xarr,yarr); </script>
+
+  <script type="text/javascript" src="js/sketches/createsliders.js"></script>
+
+  <script type="text/javascript" src="js/libraries/forkingpaths.js"></script>
+
+
+</body>
+
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Entropy Explained, With Sheep">
+<meta name="twitter:description" content="An explorable blog post about entropy, with sheep.">
+<meta name="twitter:creator" content="@aatishb">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="https://aatishb.github.io/entropy/media/sadsheep.jpg">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Entropy Explained, With Sheep" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aatishb.github.io/entropy" />
+<meta property="og:image" content="https://aatishb.github.io/entropy/media/sadsheep.jpg" />
+<meta property="og:description" content="An explorable blog post about entropy, with sheep." />
+
+</html>
