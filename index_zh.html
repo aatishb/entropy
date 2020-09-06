@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Entropy Explained</title>
+  <title>熵的解释</title>
   <meta charset="UTF-16">
   <meta name="description" content="An explorable blog post about entropy, with sheep." />
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -17,116 +17,116 @@
 <div class="container">
 
   <div id="title">
-    <h1>Entropy Explained, With Sheep</h1>
-    <h3>From Melting Ice Cubes to a Mystery About Time</h3>
-    <h3>By <a href="https://twitter.com/aatishb">Aatish Bhatia</a></h3>
+    <h1>熵的解释，以羊为例</h1>
+    <h3>从冰块融化到时间之谜</h3>
+    <h3>作者：<a href="https://twitter.com/aatishb">Aatish Bhatia</a> ｜ 译者：<a href="https://github.com/bringyou">YuBinglei</a></h3>
   </div>
 
 
-<p>Let’s start with a puzzle.</p>
+<p>让咱从一个小问题开始说起。</p>
 
-<p>Why does this gif look totally normal...</p>
+<p>为什么这图看起来挺正常…</p>
 
 
 <figure>
 <a href="https://commons.wikimedia.org/wiki/File:Melting_icecubes.gif"><img src="media/meltingice.gif" alt="Ice melting in a glass"></a>
-<figcaption> Image: Moussa / Public Domain</figcaption>
+<figcaption> 摄影: Moussa / 公共领域</figcaption>
 </figure>
 
-<p>...but this one look strange?</p>
+<p>而这张看起来怪得很？</p>
 
 <figure>
 <img src="media/meltingice_reverse.gif" alt="Ice melting in a glass, played in reverse">
 </figure>
 
-<p>The second gif is just the first one played in reverse. But something about it immediately seems <i>off</i>. This just never happens. Ice melts on a warm day, but a glass of water left out will never morph into neatly-stacked cubes of ice.</p>
+<p>第二张动图就是第一张的倒放。但乍一看就知道是<b>假的</b>，这绝不会发生。几块冰遇热会融化；一杯水遇冷会凝固成冰，但却绝不会凝固成好几块方方正正的冰块（而是会凝固成杯型）。</p>
 
-<p>But here’s the weird thing. Imagine you could zoom in and see the atoms and molecules in a melting cube of ice. If you could film the motion of any particle, and then play that film back in reverse, what you’d see would still be perfectly consistent with the laws of physics. It wouldn’t look unusual at all. The movements of the atoms and molecules in the first gif are every bit as ‘legal’ (in the court of physical law) as those in the second gif. So why is the first gif an everyday occurrence, while the reverse one impossible?</p>
+<p>但这就是奇怪的地方了。假想一下，我们可以（像显微镜一样）不断拉近视距，看清冰块中的各个原子和分子，并能将每个粒子的运动轨迹录制下来（动图1的轨迹），然后再倒放（动图2），我们会惊奇的看到，从物理学角度来说，第1张动图和第2张动图里，粒子们的轨迹都是“合法”的。那又为什么使得图1在生活中随处可见，而图2绝无可能发生呢？</p>
 
-<p>This isn’t just about ice cubes. Imagine you dropped an egg on the floor. Every atomic motion taking place in this messy event could have happened in reverse. The pieces of the egg could theoretically start on the floor, hurtle towards each other, reforming into an egg as it lifts off the ground, travel up through the air, and arrive gently in your hand. The movement of every atom in this time-reversed egg would still be perfectly consistent with the laws of physics. And yet, this never happens.</p>
+<p>不仅仅是冰块，假如将一个鸡蛋摔碎在地板上，在鸡蛋摔碎这个混乱的事件中，每个原子的运动轨迹都可以反过来，从理论上说，地板上的鸡蛋碎片可以冲向对方，聚合成一个完好的鸡蛋，然后起立穿过空气，优雅地飞回到我们手中。同样的，这个重生的鸡蛋中的原子的运动轨迹仍然符合物理学，但也同样的，碎了的鸡蛋从来没复原过。</p>
 
-<h2>The Origin of Irreversibility</h2>
+<h2>不可逆性的起源</h2>
 
-<p>So there’s a deep mystery lurking behind our seemingly simple ice-melting puzzle. At the level of microscopic particles, nature doesn’t have a preference for doing things in one direction versus doing them in reverse. The atomic world is a two-way street.</p>
+<p>所以我们这个看似简单的冰块融化问题背后，隐藏着一个大秘密。从微观粒子的角度看，大自然并不偏爱某一种方式（冰块融化或水凝固）， 原子的世界是一个双向道。</p>
 
-<p>And yet, for some reason, when we get to large collections of atoms, a one-way street emerges for the direction in which events take place, even though this wasn’t present at the microscopic level. An arrow of time emerges.</p>
+<p>当然，出于某些原因，当大量的原子聚集时，事件发生的轨迹就构成了一个单行道，尽管微观上不存在单行（的限制），时间的箭头路引就这样出现了。</p>
 
 </div>
 <figure>
 <img src="media/onewaytotwoway.gif" width="700px" alt="An arrow of time emerges.">
 
 <figcaption>
- The atomic world is a two-way street. But when we get to large collections of atoms, a one-way street emerges for the direction in which events take place.</figcaption>
+ 原子世界是一个双向道，但大量原子聚集时就成了一个单行道</figcaption>
 </figure>
 
 <div class="container">
-<p>Why is this?</p>
+<p>为什么？</p>
 
-<p>You might’ve heard an explanation that goes like this: whenever you drop an egg, or melt an ice cube, or shatter a wine glass, you’ve increased the <i>entropy</i> of the world. You might also have heard the phrase, “<i>entropy always increases</i>”. In other words, things are only allowed to happen in one direction &mdash; the direction in which entropy increases.
+<p>你也许听过这样的解释：当你摔碎一个鸡蛋、融化一块冰亦或打碎酒杯，这个世界的<b>熵</b>就增加了，也许还听过一句：“<b>熵永远增加</b>”。换句话说，事情只会朝一个方向发展——熵增加的方向。</p>
 
-<p>But this doesn’t answer the question, it just replaces it with a new set of questions.</p>
+<p>但这个说话并没有解答我们的疑惑，它只是将其替换成许多的新问题罢了。</p>
 
-<p>What is entropy, <i>really?</i> Why does it always keep increasing? Why don’t eggshells uncrack, or wine glasses unshatter? In this piece, my goal is to give you the tools to answer these questions.</p>
+<p>熵<b>到底</b>是什么？为什么熵只能增加，为什么破碎的蛋壳不会重聚，碎裂的酒杯不会复原？笔者希望通过本文的叙述，能给读者带来一些能够解释这些问题的工具</p>
 
-<p>Going down this road leads us to some of the biggest unanswered questions about the cosmos: how did our universe begin, how will it end, and why is our past different from our future?</p>
+<p>而沿着这条路继续走下去，将会触碰到宇宙中那些最大的未解之谜：宇宙是如何诞生的，又会如何终结？为什么我们的过去与未来截然不同？</p>
 
-<h2>Counting Sheep</h2>
+<h2>数羊</h2>
 
-<p>So let’s get started. First, I’d like you to picture some sheep.</p>
+<p>那么就让我们步入正题把。首先来看张图。</p>
 
 <figure>
 <img src="media/sadsheep.jpg" width="700px" alt="Confuddled sheep.">
 </figure>
 
-<p>Say we’ve got three sheep. These sheep are shuffling about in a farm, pretty much at random. And this farm is split into three plots of lands.</p>
+<p>假设我们有3只羊，随意地跑在一个农场里，而这个农场被均分成了3个区域。</p>
 
-<p>There are 10 different ways that these 3 sheep can be arranged in 3 plots of land. Try to find them all, by dragging the sheep around below.</p>
+<p>3只羊在3块地里随机排列，总共有10种组合，下图的羊可以被拖动，尝试把10种组合都找出来吧。</p>
 </div>
 
 <div id="arrangesheep" class="interactive"></div>
 
 <div class="container">
 
-<p><span class="choice" data-choicename="arrangements">Did you find all 10 arrangements? If you missed any, <a href="#" class="choice-item">click here</a> to see them all.</span></p>
+<p><span class="choice" data-choicename="arrangements">找齐了吗？如果没找齐也没关系，<a href="#" class="choice-item">点击这里</a>查看所有组合</span></p>
 
 <div class="choice-result" data-choicename="arrangements">
-<span class="choice-result-item"><p>Ok, here are all 10 arrangments:</p>
+<span class="choice-result-item"><p>好吧，10种全在这里了：</p>
 <figure>
 <img src="media/10arrangements.gif" alt="10 Ways To Arrange 3 Balls in 3 Boxes">
 </figure>
 </span>
 </div>
 
-<p>So why are we picturing this pastoral scene? Because we can use it to understand the physics of solids.</p>
+<p>我们为什么要引入这样一个田园牧歌呢？因为下文会用它来解释固体相关的物理现象。</p>
 
-<p>When you heat a solid, you're adding energy to it. We usually think of energy as something continuous, something that flows. But when you get down to the atomic level, quantum mechanics teaches us that energy comes in discrete chunks.</p>
+<p>当我们加热一个固体时，就为它注入了能量。通常认为能量是连续不断的，但当我们深入到原子领域，量子力学证实了能量是由一份一份组成的（译者注：正如物质由各个基本粒子组成，能量也是有最小组成单元，见<a href="https://zh.wikipedia.org/wiki/量子">量子</a>和<a href="https://zh.wikipedia.org/wiki/普朗克常数">普朗克常数</a>）。</p>
 
-<p>In the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/hosc.html#c1">quantum picture</a>, you can think of every atom <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/therm/einsol.html">like a tiny bucket</a> for energy, into which we can place any number of energy packets.</p>
+<p>在<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/hosc.html#c1">量子图</a>中，可以把原子看作是存放能量的<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/therm/einsol.html">小桶</a>，我们可以往其中放置任意数量的能量。</p>
 
 <figure>
 <img src="media/energyanalogy.png" alt="analogy between energy and sheep">
 </figure>
 
-<p>Just as the sheep wander about the plots of land in the farm, these packets of energy randomly shuffle among the atoms in the solid. So our imaginary farm is really a model of a solid, with energy (sheep) shuffled between atoms (plots of land).</p>
+<p>就像羊在农场里面游荡一样，能量子在固体原子中也是随机分布的。所以我们的假想农场就是固体的建模，用羊来代表能量子，用地块代表原子，羊在地块上乱跑。</p>
 
-<p>Back to the farm. We saw that there were 10 ways to arrange 3 sheep among 3 plots of land. But what if, instead, there were more sheep wandering more plots of land? How many arrangements would there be? Find out by pressing the blue buttons below.</p>
+<p>回到农场模型，当我们有3只羊和3块地时，总共有10种组合方式，但如果有更多的羊，更多的地时，会发生什么？将会有多少种组合？点击下图的蓝色按钮试试吧。</p>
 
 </div>
 
 <div id="addsheep" class="interactive"></div>
 
 <div class="container">
-<p>That escalated quickly.</p>
+<p>组合数量涨得很快。</p>
 
-<p>You can see that, as you add more sheep or plots of land, the number of possible sheep arrangements grows exponentially.</p>
+<p>不难发现，随着羊或地块的增加，总的组合数目指数上涨。</p>
 
-<p>Translating back to the solid, if we increase the number of packets of energy, or the number of atoms, the number of possible energy arrangements blows up. For a solid with 30 packets of energy distributed among 30 atoms (think 30 sheep on 30 plots of land), there are 59 million billion different ways to arrange the energy. And that’s only 30 atoms. The solids you encounter everyday have something like 10^24 (a million billion billion) atoms in them, and a similar number of energy packets. The number of ways to arrange the energy now becomes mind-bogglingly large.</p>
+<p>回到现实中的固体，假如我们增加能量或原子的数目，总共的组合数会爆炸性增长。举个例子，一个固体有30个原子和30份能量（如同30只羊跑在30块地上），总共有5.9亿亿种组合方式。想想看，这才30个原子，日常我们接触到的固体大约有10^24（1亿亿亿） (a million billion billion) ，其中的能量份数也有差不多相同的量级，这使得组合数量达到了难以想象的地步。</p>
 
-<h2>Entropy Is All About Arrangements</h2>
+<h2>熵就是组合数</h2>
 
-<p>At this point, you might be wondering what this has to do with entropy. Well, entropy is just a fancy word for ‘number of possible arrangements’. Entropy is a count of how many ways you can rearrange the ‘insides’ of a thing (its microscopic internals), while keeping its ‘outwardly’ (macroscopic) state unchanged. (Technically it’s the log of the number of these arrangements, but that’s just a mathematical convenience and doesn’t affect our discussion.)</p>
+<p>看到这里，读者们可能会感到疑惑，这两者之间有什么关系呢？实际上，熵就是“潜在的组合数”的时兴说法。熵是保持一件事物外在状态（宏观）不变的前提下，可以对其内在（微观）进行重新排列的计数（实际上是这些计数的对数，但这只是数学上的简化，并不影响我们的讨论）。</p>
 
-<p>So, for example, if you gave me a balloon, I could measure certain things about the gas inside it – its pressure, volume, temperature, and so on. These numbers record the macroscopic state of the gas. Given this handful of numbers, there are umpteen ways in which the gas molecules might be arranged inside the balloon. They could have different positions, and whiz about in different directions, with different speeds. So there’s a massive number of internal, microscopic arrangements (in this case, the positions and velocities of the gas molecules) that all result in the same external state (pressure, volume, and temperature of the gas). Entropy is a count of all these arrangements.</p>
+<p>举个例子，对于一个气球，我们可以测量出里面气体的一些确切属性——压强、体积和温度等，也就是表达它宏观状态的数据So, for example, if you gave me a balloon, I could measure certain things about the gas inside it – its pressure, volume, temperature, and so on. These numbers record the macroscopic state of the gas. Given this handful of numbers, there are umpteen ways in which the gas molecules might be arranged inside the balloon. They could have different positions, and whiz about in different directions, with different speeds. So there’s a massive number of internal, microscopic arrangements (in this case, the positions and velocities of the gas molecules) that all result in the same external state (pressure, volume, and temperature of the gas). Entropy is a count of all these arrangements.</p>
 
 <figure>
 <img src="media/insideaballoon.jpg" width="400px" alt="molecules inside a balloon">
